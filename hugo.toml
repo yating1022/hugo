@@ -1,6 +1,6 @@
 baseURL = "http://129.203.193.63/"
 languageCode = "zh-cn"
-title = "流水账"
+title = "Fruits&Blog"
 theme = "github-style"
 
 [params]
