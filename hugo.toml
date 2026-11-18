@@ -1,6 +1,6 @@
 baseURL = 'http://129.203.193.63/'
 languageCode = 'zh-cn'
-title = '我的朋友圈'
+title = '流水账'
 theme = 'hugo-theme-tian'
 
 [permalinks]
@@ -25,11 +25,11 @@ theme = 'hugo-theme-tian'
   # ---------------------------------------------------------------------------------------
   # 个人信息设置
   # ---------------------------------------------------------------------------------------
-  username = "您的名字"
+  username = "Fruits"
   # 头像：把图片放到 static/images/avatar.jpg，或改成网图链接
   avatar = "/images/avatar.jpg"
 
-  description = "这是我的个人动态展示页"
+  description = "一个普通人的简单流水账"
 
   # 首页封面图：必须与 headerMedia 写成同一个值
   cover = "/images/cover.jpg"
