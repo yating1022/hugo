@@ -1,0 +1,84 @@
+baseURL = 'http://129.203.193.63/'
+languageCode = 'zh-cn'
+title = '我的朋友圈'
+theme = 'hugo-theme-tian'
+
+[permalinks]
+  posts = "/:filename.html"
+
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "关于"
+  url = "/about.html"
+  weight = 2
+
+[[menu.main]]
+  name = "友链"
+  url = "/friends.html"
+  weight = 3
+
+[params]
+  # ---------------------------------------------------------------------------------------
+  # 个人信息设置
+  # ---------------------------------------------------------------------------------------
+  username = "您的名字"
+  # 头像：把图片放到 static/images/avatar.jpg，或改成网图链接
+  avatar = "/images/avatar.jpg"
+
+  description = "这是我的个人动态展示页"
+
+  # ---------------------------------------------------------------------------------------
+  # 网站全局设置
+  # ---------------------------------------------------------------------------------------
+  favicon = "favicon.ico"
+  footerText = "© 2026 Designed by tian"
+
+  # ---------------------------------------------------------------------------------------
+  # 评论系统
+  # ---------------------------------------------------------------------------------------
+  commentMode = "waline"
+  # 需要自建 Waline 服务端后替换成真实地址
+  walineServer = "https://your-waline-server.com"
+  walineTurnstileKey = ""
+
+  artalkServer = "https://your-artalk-server.com"
+  artalkSite = "您的站点名称"
+  enableDanmaku = true
+
+  # 首页顶部封面：图片放 static/images/header.png，或换成视频路径
+  headerMedia = "/images/header.png"
+
+  giscusRepo = ""
+  giscusRepoId = ""
+  giscusCategory = ""
+  giscusCategoryId = ""
+  giscusMapping = "pathname"
+  giscusStrict = "0"
+  giscusReactionsEnabled = "1"
+  giscusEmitMetadata = "0"
+  giscusInputPosition = "bottom"
+  giscusLang = "zh-CN"
+  giscusLoading = "lazy"
+
+  twikooEnvId = ""
+  twikooLang = "zh-CN"
+
+  # 字体："ZQL" / "PingFangQiaoMuTi" / "AlimamaFangYuanTi"
+  fontFamily = "ZQL"
+
+  enablePjax = false
+  enableLightbox = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4
