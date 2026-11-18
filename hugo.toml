@@ -1,4 +1,4 @@
-baseURL = "http://129.203.193.63/"
+baseURL = "https://jgw.bjyt.de/"
 languageCode = "zh-cn"
 title = "Fruits&Blog"
 theme = "github-style"
@@ -7,7 +7,7 @@ theme = "github-style"
   author = "Fruits"
   description = "一个普通人的简单流水账"
   github = "yating1022"
-  url = "http://129.203.193.63"
+  url = "https://jgw.bjyt.de"
   keywords = "blog, 流水账, Fruits"
   rss = true
   lastmod = true
