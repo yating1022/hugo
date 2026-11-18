@@ -1,87 +1,38 @@
-baseURL = 'http://129.203.193.63/'
-languageCode = 'zh-cn'
-title = '流水账'
-theme = 'hugo-theme-tian'
-
-[permalinks]
-  posts = "/:filename.html"
-
-[[menu.main]]
-  name = "首页"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "关于"
-  url = "/about.html"
-  weight = 2
-
-[[menu.main]]
-  name = "友链"
-  url = "/friends.html"
-  weight = 3
+baseURL = "http://129.203.193.63/"
+languageCode = "zh-cn"
+title = "流水账"
+theme = "github-style"
 
 [params]
-  # ---------------------------------------------------------------------------------------
-  # 个人信息设置
-  # ---------------------------------------------------------------------------------------
-  username = "Fruits"
-  # 头像：把图片放到 static/images/avatar.jpg，或改成网图链接
-  avatar = "/images/avatar.jpg"
-
+  author = "Fruits"
   description = "一个普通人的简单流水账"
+  github = "yating1022"
+  url = "http://129.203.193.63"
+  keywords = "blog, 流水账, Fruits"
+  rss = true
+  lastmod = true
 
-  # 首页封面图：必须与 headerMedia 写成同一个值
-  cover = "/images/cover.jpg"
+  # 站点图标与头像（使用本站 static 下的资源）
+  favicon = "/favicon.ico"
+  avatar = "/images/avatar.jpg"
+  headerIcon = "/images/avatar.jpg"
 
-  # ---------------------------------------------------------------------------------------
-  # 网站全局设置
-  # ---------------------------------------------------------------------------------------
-  favicon = "favicon.ico"
-  footerText = "© 2026 Designed by tian"
+  location = "China"
+  userStatusEmoji = "😀"
 
-  # ---------------------------------------------------------------------------------------
-  # 评论系统
-  # ---------------------------------------------------------------------------------------
-  commentMode = "waline"
-  # 需要自建 Waline 服务端后替换成真实地址
-  walineServer = "https://your-waline-server.com"
-  walineTurnstileKey = ""
+  # 评论：暂不启用 Gitalk（需要 GitHub OAuth clientID/secret）
+  enableGitalk = false
+  enableSearch = true
 
-  artalkServer = "https://your-artalk-server.com"
-  artalkSite = "您的站点名称"
-  enableDanmaku = true
+  [[params.links]]
+    title = "GitHub"
+    href = "https://github.com/yating1022"
 
-  # 首页顶部封面：与 cover 保持一致；想换视频时改成 /videos/xxx.mp4
-  headerMedia = "/images/cover.jpg"
-
-  giscusRepo = ""
-  giscusRepoId = ""
-  giscusCategory = ""
-  giscusCategoryId = ""
-  giscusMapping = "pathname"
-  giscusStrict = "0"
-  giscusReactionsEnabled = "1"
-  giscusEmitMetadata = "0"
-  giscusInputPosition = "bottom"
-  giscusLang = "zh-CN"
-  giscusLoading = "lazy"
-
-  twikooEnvId = ""
-  twikooLang = "zh-CN"
-
-  # 字体："ZQL" / "PingFangQiaoMuTi" / "AlimamaFangYuanTi"
-  fontFamily = "ZQL"
-
-  enablePjax = false
-  enableLightbox = true
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [markup]
   [markup.highlight]
-    codeFences = true
-    guessSyntax = true
+    noClasses = false
     lineNos = true
-    lineNumbersInTable = false
-    noClasses = true
-    style = "dracula"
     tabWidth = 4
